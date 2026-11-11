@@ -1,0 +1,86 @@
+{
+  "info": {
+    "_postman_id": "aca28bc7-7a6e-4afd-8414-ac832aef5221",
+    "name": "U4ACT01_RESTCONF",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58102078",
+    "_collection_link": "https://go.postman.co/collection/58102078-aca28bc7-7a6e-4afd-8414-ac832aef5221?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "username",
+              "value": "developer",
+              "type": "string"
+            },
+            {
+              "key": "password",
+              "value": "C1sco12345",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"ietf-interfaces:interface\": {\r\n    \"name\": \"Loopback25\",\r\n    \"enabled\": false\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://10.10.20.48/restconf/data/ietf-interfaces:interfaces/interface=Loopback25",
+          "protocol": "https",
+          "host": [
+            "10",
+            "10",
+            "20",
+            "48"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "ietf-interfaces:interfaces",
+            "interface=Loopback25"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}
